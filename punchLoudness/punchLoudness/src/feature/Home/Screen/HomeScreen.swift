@@ -54,7 +54,7 @@ class HomeScreen: UIView {
         tableView.showsVerticalScrollIndicator = false // desativando scrool indicator
         // TO DO: Register
         tableView.register(HomeBodyTableViewCell.self, forCellReuseIdentifier: HomeBodyTableViewCell.identifier)
-        tableView.backgroundColor = .white//UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
+        tableView.backgroundColor = .clear//UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
         return tableView
     }()
     
@@ -98,7 +98,7 @@ class HomeScreen: UIView {
             collectionView.heightAnchor.constraint(equalToConstant: 75),
             
             
-            tableView.topAnchor.constraint(equalTo: collectionView.bottomAnchor, constant: 15),
+            tableView.topAnchor.constraint(equalTo: collectionView.bottomAnchor),
             tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: bottomAnchor),

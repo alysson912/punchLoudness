@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		761032EF2A9E7CFE00368841 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761032EE2A9E7CFE00368841 /* HomeModel.swift */; };
+		761032F22A9E7F0200368841 /* HomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 761032F12A9E7F0200368841 /* HomeData.json */; };
+		761032F52A9E8D0C00368841 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761032F42A9E8D0C00368841 /* HomeService.swift */; };
 		767336A52A96822600CB3AA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767336A42A96822600CB3AA9 /* AppDelegate.swift */; };
 		767336A72A96822600CB3AA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767336A62A96822600CB3AA9 /* SceneDelegate.swift */; };
 		767336A92A96822600CB3AA9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767336A82A96822600CB3AA9 /* HomeVC.swift */; };
@@ -18,9 +21,14 @@
 		767336CC2A96AB1A00CB3AA9 /* HomeFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767336CA2A96AB1A00CB3AA9 /* HomeFilterCollectionViewCell.swift */; };
 		767336D22A96ADE000CB3AA9 /* HomeBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767336CF2A96ADE000CB3AA9 /* HomeBodyTableViewCell.swift */; };
 		767336D32A96ADE000CB3AA9 /* HomeBodyTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767336D12A96ADE000CB3AA9 /* HomeBodyTableViewCellScreen.swift */; };
+		768ADDDD2AA0CDD800B0C368 /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768ADDDC2AA0CDD800B0C368 /* GenericService.swift */; };
+		768BB3632A9E69C600844B4E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768BB3622A9E69C600844B4E /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		761032EE2A9E7CFE00368841 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		761032F12A9E7F0200368841 /* HomeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeData.json; sourceTree = "<group>"; };
+		761032F42A9E8D0C00368841 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		767336A12A96822600CB3AA9 /* punchLoudness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = punchLoudness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		767336A42A96822600CB3AA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		767336A62A96822600CB3AA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +42,8 @@
 		767336CA2A96AB1A00CB3AA9 /* HomeFilterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeFilterCollectionViewCell.swift; sourceTree = "<group>"; };
 		767336CF2A96ADE000CB3AA9 /* HomeBodyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBodyTableViewCell.swift; sourceTree = "<group>"; };
 		767336D12A96ADE000CB3AA9 /* HomeBodyTableViewCellScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBodyTableViewCellScreen.swift; sourceTree = "<group>"; };
+		768ADDDC2AA0CDD800B0C368 /* GenericService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericService.swift; sourceTree = "<group>"; };
+		768BB3622A9E69C600844B4E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		761032ED2A9E7CC700368841 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				761032EE2A9E7CFE00368841 /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		761032F02A9E7EE300368841 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				761032F12A9E7F0200368841 /* HomeData.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		761032F32A9E8CB200368841 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				761032F42A9E8D0C00368841 /* HomeService.swift */,
+				768ADDDC2AA0CDD800B0C368 /* GenericService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		767336982A96822600CB3AA9 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +101,8 @@
 		767336A32A96822600CB3AA9 /* punchLoudness */ = {
 			isa = PBXGroup;
 			children = (
+				767336A42A96822600CB3AA9 /* AppDelegate.swift */,
+				767336A62A96822600CB3AA9 /* SceneDelegate.swift */,
 				767336B82A96829400CB3AA9 /* src */,
 				767336AD2A96822700CB3AA9 /* Assets.xcassets */,
 				767336AF2A96822700CB3AA9 /* LaunchScreen.storyboard */,
@@ -77,9 +114,9 @@
 		767336B82A96829400CB3AA9 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				761032F32A9E8CB200368841 /* Service */,
+				761032F02A9E7EE300368841 /* Mock */,
 				767336C02A96840500CB3AA9 /* Utils */,
-				767336A42A96822600CB3AA9 /* AppDelegate.swift */,
-				767336A62A96822600CB3AA9 /* SceneDelegate.swift */,
 				767336B92A96829A00CB3AA9 /* feature */,
 			);
 			path = src;
@@ -89,18 +126,20 @@
 			isa = PBXGroup;
 			children = (
 				767336CD2A96AB2000CB3AA9 /* Cells */,
-				767336BA2A9682A900CB3AA9 /* home */,
-				767336A82A96822600CB3AA9 /* HomeVC.swift */,
+				767336BA2A9682A900CB3AA9 /* Home */,
 			);
 			path = feature;
 			sourceTree = "<group>";
 		};
-		767336BA2A9682A900CB3AA9 /* home */ = {
+		767336BA2A9682A900CB3AA9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				767336BD2A9682DA00CB3AA9 /* HomeScreen.swift */,
+				761032ED2A9E7CC700368841 /* Model */,
+				768BB3612A9E69A300844B4E /* ViewModel */,
+				768BB3642A9E69DB00844B4E /* Screen */,
+				768BB3652A9E69ED00844B4E /* Controller */,
 			);
-			path = home;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		767336BF2A9683F800CB3AA9 /* Extensions */ = {
@@ -148,8 +187,8 @@
 		767336CE2A96ADE000CB3AA9 /* HomeBodyTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				767336CF2A96ADE000CB3AA9 /* HomeBodyTableViewCell.swift */,
 				767336D02A96ADE000CB3AA9 /* Screen */,
+				767336CF2A96ADE000CB3AA9 /* HomeBodyTableViewCell.swift */,
 			);
 			path = HomeBodyTableViewCell;
 			sourceTree = "<group>";
@@ -160,6 +199,30 @@
 				767336D12A96ADE000CB3AA9 /* HomeBodyTableViewCellScreen.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		768BB3612A9E69A300844B4E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				768BB3622A9E69C600844B4E /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		768BB3642A9E69DB00844B4E /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				767336BD2A9682DA00CB3AA9 /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		768BB3652A9E69ED00844B4E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				767336A82A96822600CB3AA9 /* HomeVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +285,7 @@
 			files = (
 				767336B12A96822700CB3AA9 /* LaunchScreen.storyboard in Resources */,
 				767336AE2A96822700CB3AA9 /* Assets.xcassets in Resources */,
+				761032F22A9E7F0200368841 /* HomeData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,8 +298,12 @@
 			files = (
 				767336BE2A9682DA00CB3AA9 /* HomeScreen.swift in Sources */,
 				767336CC2A96AB1A00CB3AA9 /* HomeFilterCollectionViewCell.swift in Sources */,
+				761032EF2A9E7CFE00368841 /* HomeModel.swift in Sources */,
 				767336A92A96822600CB3AA9 /* HomeVC.swift in Sources */,
+				768BB3632A9E69C600844B4E /* HomeViewModel.swift in Sources */,
 				767336A52A96822600CB3AA9 /* AppDelegate.swift in Sources */,
+				768ADDDD2AA0CDD800B0C368 /* GenericService.swift in Sources */,
+				761032F52A9E8D0C00368841 /* HomeService.swift in Sources */,
 				767336D22A96ADE000CB3AA9 /* HomeBodyTableViewCell.swift in Sources */,
 				767336C22A96856600CB3AA9 /* UIView + Extension.swift in Sources */,
 				767336A72A96822600CB3AA9 /* SceneDelegate.swift in Sources */,

@@ -1,0 +1,43 @@
+
+{
+    "products": [
+        {
+            "image": "k1",
+            "title": "Pequeno Porte",
+            "description": "Descrição"
+        },
+        {
+            "image": "k1",
+            "title": "Medio Porte",
+            "description": "Descrição"
+        },
+        {
+            "image": "k1",
+            "title": "Grande Porte",
+            "description": "Descrição"
+        }
+    ],
+    "details": [
+        {
+            "size": "Pequeno Porte",
+            "image": "img3",
+            "title": "Pequeno Porte",
+            "description": "Descrição",
+            "publicSize": "300"
+        },
+        {
+            "sixe": "Médio Porte",
+            "image": "img3",
+            "title": "Médio Porte",
+            "publicSize": "1000"
+        },
+        {
+            "size": "Grande Porte",
+            "image": "img3",
+            "title": "Grande Porte",
+            "description": "Descrição",
+            "publicSize": "10000"
+        }
+    ]
+}
+

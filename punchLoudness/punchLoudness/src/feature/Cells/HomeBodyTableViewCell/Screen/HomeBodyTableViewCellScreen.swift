@@ -7,21 +7,24 @@
 
 import UIKit
 
+
+
 class HomeBodyTableViewCellScreen: UIView {
     
     lazy var viewBackground: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor =  UIColor(red: 153/255, green: 153/255, blue: 153/255, alpha: 1)
+        view.backgroundColor =  UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
         view.clipsToBounds = true
         view.layer.cornerRadius = 18
         return view
     }()
     
-    lazy var nftImageView : UIImageView = {
+    lazy var imageView : UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.contentMode = .scaleToFill
+       // image.image = UIImage(named: "k1")
         return image
     }()
     
@@ -32,13 +35,14 @@ class HomeBodyTableViewCellScreen: UIView {
         image.clipsToBounds = true
         image.layer.cornerRadius = 24
         image.tintColor = .black
-        
+       // image.image = UIImage(named: "k1")
         return image
     }()
     
     lazy var ownedByPriceLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        //label.text = "ownedByPriceLabel"
         label.textColor =  UIColor(red: 69/255, green: 191/255, blue: 229/255, alpha: 1)
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
         return label
@@ -47,7 +51,8 @@ class HomeBodyTableViewCellScreen: UIView {
     lazy var userLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor =  UIColor(red: 255, green: 255, blue: 255, alpha: 1)
+        label.text = "userLabel"
+        label.textColor = .red //UIColor(red: 255, green: 255, blue: 255, alpha: 1)
         label.font = UIFont.boldSystemFont(ofSize: 14)
         return label
     }()
@@ -55,7 +60,8 @@ class HomeBodyTableViewCellScreen: UIView {
     lazy var priceLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor =  UIColor(red: 69/255, green: 191/255, blue: 229/255, alpha: 1)
+        //label.text = "priceLabel"
+        label.textColor =  .red//UIColor(red: 69/255, green: 191/255, blue: 229/255, alpha: 1)
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
         return label
     }()
@@ -63,7 +69,8 @@ class HomeBodyTableViewCellScreen: UIView {
     lazy var priceValueLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor =  UIColor(red: 255, green: 255, blue: 255, alpha: 1)
+        //label.text = "1000.00"
+        label.textColor = . cyan //UIColor(red: 255, green: 255, blue: 255, alpha: 1)
         label.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
         return label
     }()
@@ -80,7 +87,7 @@ class HomeBodyTableViewCellScreen: UIView {
     
     func addView(){
         addSubview(viewBackground)
-        viewBackground.addSubview(nftImageView)
+        viewBackground.addSubview(imageView)
         viewBackground.addSubview(userImageView)
         viewBackground.addSubview(ownedByPriceLabel)
         viewBackground.addSubview(userLabel)
@@ -98,24 +105,24 @@ class HomeBodyTableViewCellScreen: UIView {
             viewBackground.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
             viewBackground.heightAnchor.constraint(equalToConstant: 340),
             
-            nftImageView.topAnchor.constraint(equalTo: viewBackground.topAnchor),
-            nftImageView.leadingAnchor.constraint(equalTo: viewBackground.leadingAnchor),
-            nftImageView.trailingAnchor.constraint(equalTo: viewBackground.trailingAnchor),
-            nftImageView.heightAnchor.constraint(equalToConstant: 270),
+            imageView.topAnchor.constraint(equalTo: viewBackground.topAnchor),
+            imageView.leadingAnchor.constraint(equalTo: viewBackground.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: viewBackground.trailingAnchor),
+            imageView.heightAnchor.constraint(equalToConstant: 270),
             
-            userImageView.topAnchor.constraint(equalTo: nftImageView.bottomAnchor, constant: 10),
+            userImageView.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 10),
             userImageView.leadingAnchor.constraint(equalTo: viewBackground.leadingAnchor, constant: 8),
             userImageView.heightAnchor.constraint(equalToConstant: 48),
             userImageView.widthAnchor.constraint(equalToConstant: 48),
             
-            ownedByPriceLabel.topAnchor.constraint(equalTo: nftImageView.bottomAnchor, constant: 20),
+            ownedByPriceLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20),
             ownedByPriceLabel.leadingAnchor.constraint(equalTo: userImageView.trailingAnchor, constant: 8),
             
             
             userLabel.topAnchor.constraint(equalTo: ownedByPriceLabel.bottomAnchor, constant: 5),
             userLabel.leadingAnchor.constraint(equalTo: userImageView.trailingAnchor, constant: 8),
             
-            priceLabel.topAnchor.constraint(equalTo: nftImageView.bottomAnchor, constant: 20),
+            priceLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20),
             priceLabel.trailingAnchor.constraint(equalTo: viewBackground.trailingAnchor, constant: -15),
             
             priceValueLabel.topAnchor.constraint(equalTo: priceLabel.bottomAnchor, constant: 5),

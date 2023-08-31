@@ -39,22 +39,11 @@ class HomeBodyTableViewCell: UITableViewCell {
             
         ])
     }
-    // setup cells
+   //  setup cells
     
-//    public func setupCell(data: Nft) {
-//        if let urlNFT: URL = URL(string: data.nftImage ?? ""), let urlUser: URL = URL(string: data.userImage ?? "" ){
-//
-//            screen.nftImageView.af.setImage(withURL: urlNFT, placeholderImage: UIImage(named: "threeButtons"))
-//            screen.nftImageView.backgroundColor = .white
-//
-//            screen.userImageView.af.setImage(withURL: urlUser, placeholderImage: UIImage(systemName: "person.circle.fill")?.withTintColor(.black))
-//            screen.userImageView.backgroundColor = .white
-//        }
-//
-//        screen.priceLabel.text = data.price ?? ""
-//        screen.priceValueLabel.text = "\(data.nftPrice ?? 0.0) ETH"
-//        screen.ownedByPriceLabel.text = data.ownedBy
-//        screen.userLabel.text = data.userName
-//    }
+    public func setupCell(data: Product) {
+        //screen.imageView.image = UIImage(named: data.products. ?? "")
+        screen.userLabel.text = data.title
+        }
     
 }
