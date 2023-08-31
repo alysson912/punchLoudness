@@ -3,40 +3,51 @@
     "products": [
         {
             "image": "k1",
-            "title": "Pequeno Porte",
-            "description": "Descrição"
+            "title": "Systema de Pequeno Porte",
+            "brand": "L-Acustic's",
+            "model": "Docs-Series",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+            "productsDetails": [
+                {
+                    "productImage": [ "k1", "GSL", "210y"],
+                    "title": "Systema de Pequeno Porte",
+                    "brand": "L-Acustic's",
+                    "model": "Docs-Series",
+                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+                }
+            ]
         },
         {
-            "image": "k1",
-            "title": "Medio Porte",
-            "description": "Descrição"
+            "image": "GSL",
+            "title": "Systema de Medio Porte",
+            "brand": "L-Acustic's",
+            "model": "GSL-Series",
+            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+            "productsDetails": [
+                {
+                    "productImage": [ "k1", "GSL", "210y"],
+                    "title": "Systema de Pequeno Porte",
+                    "brand": "L-Acustic's",
+                    "model": "Docs-Series",
+                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+                }
+            ]
         },
         {
-            "image": "k1",
-            "title": "Grande Porte",
-            "description": "Descrição"
-        }
-    ],
-    "details": [
-        {
-            "size": "Pequeno Porte",
-            "image": "img3",
-            "title": "Pequeno Porte",
-            "description": "Descrição",
-            "publicSize": "300"
-        },
-        {
-            "sixe": "Médio Porte",
-            "image": "img3",
-            "title": "Médio Porte",
-            "publicSize": "1000"
-        },
-        {
-            "size": "Grande Porte",
-            "image": "img3",
-            "title": "Grande Porte",
-            "description": "Descrição",
-            "publicSize": "10000"
+            "image": "210y",
+            "title": "Systema de Grande Porte",
+            "brand": "LS-Audio",
+            "model": "Y - Series",
+            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem",
+            "productsDetails": [
+                {
+                    "productImage": [ "k1", "GSL", "210y"],
+                    "title": "Systema de Pequeno Porte",
+                    "brand": "L-Acustic's",
+                    "model": "Docs-Series",
+                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+                }
+            ]
         }
     ]
 }

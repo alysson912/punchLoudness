@@ -43,7 +43,11 @@ class HomeBodyTableViewCell: UITableViewCell {
     
     public func setupCell(data: Product) {
         //screen.imageView.image = UIImage(named: data.products. ?? "")
-        screen.userLabel.text = data.title
+        screen.titleLabel.text = data.title
+        screen.imageView.image = UIImage(named: data.image ?? "")
+        screen.brandLabel.text = data.brand
+        screen.modelLabel.text = data.model
+        screen.descriptionLabel.text = data.description
         }
     
 }
