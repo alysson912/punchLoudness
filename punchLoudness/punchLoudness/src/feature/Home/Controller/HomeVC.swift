@@ -59,8 +59,8 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeBodyTableViewCell.identifier, for: indexPath) as? HomeBodyTableViewCell
         
         //MARK: SETUP TABLEVIEW
-        
         cell?.setupCell(data: viewModel.loadCurrentNft(indexPath: indexPath))
+
         
         return cell ?? UITableViewCell()
     }
@@ -69,7 +69,9 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         return viewModel.heightForRowAt
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = PackDetailVC()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
 }

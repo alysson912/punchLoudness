@@ -39,15 +39,6 @@ class HomeFilterCollectionViewCell: UICollectionViewCell {
             
         ])
     }
-    
-//    public func setupCell(filter: FilterNft){
-//        screen.filterLabel.text = filter.title ?? ""
-//        if filter.isSelected ?? false {
-//            screen.filterLabel.backgroundColor = UIColor(red: 0/255, green: 255/255, blue: 255/255, alpha: 0.9)
-//        }else {
-//            screen.filterLabel.backgroundColor =  UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.6)
-//            
-//        }
-//    }
+
     
 }

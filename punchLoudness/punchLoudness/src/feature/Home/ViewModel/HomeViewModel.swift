@@ -15,7 +15,7 @@ protocol  HomeViewModelDelegate: AnyObject {
 class HomeViewModel{
 
     private var service = HomeService()
-    private var data: HomeData?
+    private var data: HomeDataModel?
     
     
     weak private var delegate: HomeViewModelDelegate?
@@ -35,12 +35,12 @@ class HomeViewModel{
         }
     }
     
-    public func loadCurrentNft(indexPath: IndexPath) -> Product {
-        return data?.products?[indexPath.row] ?? Product()
+    public func loadCurrentNft(indexPath: IndexPath) -> ListProduct {
+        return data?.listProducts?[indexPath.row] ?? ListProduct()
     }
 
     public var numberOfRowsInSection: Int {
-        return 3
+        return data?.listProducts?.count ?? 0
     }
     public var heightForRowAt: CGFloat {
         return 360

@@ -41,13 +41,13 @@ class HomeBodyTableViewCell: UITableViewCell {
     }
    //  setup cells
     
-    public func setupCell(data: Product) {
-        //screen.imageView.image = UIImage(named: data.products. ?? "")
+    public func setupCell(data: ListProduct) {
         screen.titleLabel.text = data.title
         screen.imageView.image = UIImage(named: data.image ?? "")
         screen.brandLabel.text = data.brand
-        screen.modelLabel.text = data.model
         screen.descriptionLabel.text = data.description
+        screen.modelLabel.text = data.model
+        
         }
     
 }

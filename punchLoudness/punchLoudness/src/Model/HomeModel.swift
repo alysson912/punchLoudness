@@ -12,19 +12,14 @@
 import Foundation
 
 // MARK: - HomeData
-struct HomeData: Codable {
-    var products: [Product]?
+struct HomeDataModel: Codable {
+    var totalValue: Double?
+    var listProducts: [ListProduct]?
 }
 
-// MARK: - Product
-struct Product: Codable {
-    var image, title, brand, model: String?
-    var description: String?
-    var productsDetails: [ProductsDetail]?
-}
-
-// MARK: - ProductsDetail
-struct ProductsDetail: Codable {
+// MARK: - ListProduct
+struct ListProduct: Codable {
+    var id, image, title, brand: String?
+    var model, description: String?
     var productImage: [String]?
-    var title, brand, model, description: String?
 }

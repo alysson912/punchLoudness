@@ -1,53 +1,47 @@
 
 {
-    "products": [
+    "totalValue": 3566.10,
+    "listProducts": [
         {
+            "id" : "01",
             "image": "k1",
             "title": "Systema de Pequeno Porte",
             "brand": "L-Acustic's",
             "model": "Docs-Series",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-            "productsDetails": [
-                {
-                    "productImage": [ "k1", "GSL", "210y"],
-                    "title": "Systema de Pequeno Porte",
-                    "brand": "L-Acustic's",
-                    "model": "Docs-Series",
-                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
-                }
-            ]
+            "productImage": [ "k1", "GSL", "210y"]
+            
         },
+        
         {
+            "id" : "02",
             "image": "GSL",
-            "title": "Systema de Medio Porte",
-            "brand": "L-Acustic's",
-            "model": "GSL-Series",
-            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-            "productsDetails": [
-                {
-                    "productImage": [ "k1", "GSL", "210y"],
-                    "title": "Systema de Pequeno Porte",
-                    "brand": "L-Acustic's",
-                    "model": "Docs-Series",
-                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
-                }
-            ]
+            "title": "Systema de Médio Porte",
+            "brand": "d&b AudioTecnik",
+            "model": "SL-Series",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+            "productImage": [ "k1", "GSL", "210y"]
+            
         },
         {
+            "id" : "03",
             "image": "210y",
             "title": "Systema de Grande Porte",
-            "brand": "LS-Audio",
-            "model": "Y - Series",
-            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem",
-            "productsDetails": [
-                {
-                    "productImage": [ "k1", "GSL", "210y"],
-                    "title": "Systema de Pequeno Porte",
-                    "brand": "L-Acustic's",
-                    "model": "Docs-Series",
-                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
-                }
-            ]
+            "brand": "LS Audio",
+            "model": "210-Y",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+            "productImage": [ "k1", "GSL", "210y"]
+            
+        },
+        {
+            "id" : "04",
+            "image": "GTO_01",
+            "title": "Systema de Grande Porte",
+            "brand": "Outline",
+            "model": "GTO",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+            "productImage": [ "k1", "GSL", "210y"]
+            
         }
     ]
 }

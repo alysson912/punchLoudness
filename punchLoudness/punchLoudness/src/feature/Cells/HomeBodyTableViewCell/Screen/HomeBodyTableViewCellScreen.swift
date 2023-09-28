@@ -24,7 +24,7 @@ class HomeBodyTableViewCellScreen: UIView {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.contentMode = .scaleToFill
-        image.image = UIImage(named: "k1")
+       //image.image = UIImage(named: "k1")
         image.backgroundColor = .clear
         return image
     }()
