@@ -10,6 +10,11 @@ import UIKit
 
 extension UIView { // tudo que herda de UIView, temos sombras do card e constraints = 0 
     
+    func roundCorners(cornerRadiuns: Double,typeCorners: CACornerMask){
+        self.layer.cornerRadius = CGFloat(cornerRadiuns)
+        self.clipsToBounds = true
+        self.layer.maskedCorners = typeCorners
+    }
     
     func setCardShadow(){
         layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor

@@ -25,16 +25,31 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         screen?.configCollectionView(delegate: self, dataSource: self)
-        screen?.configTableView(delegate: self, dataSource: self)
+        viewModel.delegate(delegate: self)
         viewModel.fetchRequest(.mock)
     }
 
 
 }
+extension HomeVC: HomeViewModelDelegate {
+    func sucess() {
+        DispatchQueue.main.async {
+          //  self.screen?.configCollectionViewProtocols(delegate: self, dataSource: self)
+            self.screen?.configTableView(delegate: self, dataSource: self)
+            self.screen?.tableView.reloadData()
+        }
+        
+    }
+    
+    func error() {
+        // print(#function)
+    }
+    
+}
 
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 8
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -60,8 +75,6 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         
         //MARK: SETUP TABLEVIEW
         cell?.setupCell(data: viewModel.loadCurrentNft(indexPath: indexPath))
-
-        
         return cell ?? UITableViewCell()
     }
     
@@ -70,8 +83,20 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = PackDetailVC()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        let productDetail = PackDetailVC(products: viewModel.loadCurrentNft(indexPath: indexPath))
+        productDetail.modalPresentationStyle = .fullScreen
+        present(productDetail, animated: true)
+    }
+}
+
+extension HomeVC: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) { // qualquer caractere alterado na search sera disparado
+        
+        
+        screen?.tableView.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) { // quando precionar buscar
+        
     }
 }

@@ -19,6 +19,7 @@ struct HomeDataModel: Codable {
 
 // MARK: - ListProduct
 struct ListProduct: Codable {
+    
     var id, image, title, brand: String?
     var model, description: String?
     var productImage: [String]?

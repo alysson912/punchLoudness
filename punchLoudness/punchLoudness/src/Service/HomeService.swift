@@ -8,7 +8,7 @@
 import UIKit
 
 protocol HomeServiceDelegate: GenericService {
-    func getHomeFromJson(completion: @escaping completion<HomeDataModel?>)
+    func getHomeFromJson(completion: completion<HomeDataModel?>)
    // func getHome(completion: @escaping completion<NFTData?>)
 }
 

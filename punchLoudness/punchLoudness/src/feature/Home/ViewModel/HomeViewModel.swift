@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol  HomeViewModelDelegate: AnyObject {
+protocol HomeViewModelDelegate: AnyObject {
     func sucess()
     func error()
 }
@@ -19,6 +19,10 @@ class HomeViewModel{
     
     
     weak private var delegate: HomeViewModelDelegate?
+    
+    public func delegate( delegate: HomeViewModelDelegate?) {
+        self.delegate = delegate
+    }
     
     public func fetchRequest(_ typeFetch: TypeFetch) {
         

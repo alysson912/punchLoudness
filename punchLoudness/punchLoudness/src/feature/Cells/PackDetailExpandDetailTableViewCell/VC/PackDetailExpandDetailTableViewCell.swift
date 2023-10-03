@@ -1,19 +1,19 @@
 //
-//  TableViewCell.swift
+//  PackDetailExpandDetailTableViewCell.swift
 //  punchLoudness
 //
-//  Created by Alysson on 04/09/23.
+//  Created by Alysson on 03/10/23.
 //
 
 import UIKit
 
-class PackImageExpandDetailTableViewCell: UITableViewCell {
+class PackDetailExpandDetailTableViewCell: UITableViewCell {
     
     
-    static let identifier: String = String( describing: PackImageExpandDetailTableViewCell.self)
+    static let identifier: String = String( describing: PackDetailExpandDetailTableViewCell.self)
     
-    private lazy var screen: PackImageExpandDetailTableViewCellScreen = {
-        let view = PackImageExpandDetailTableViewCellScreen()
+    private lazy var screen: PackDetailExpandDetailTableViewCellScreen = {
+        let view = PackDetailExpandDetailTableViewCellScreen()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -37,10 +37,10 @@ class PackImageExpandDetailTableViewCell: UITableViewCell {
     
     //MARK: Criar setupDetailCell
     
-    public func setupCellPackDetail( image: String){
-        //screen.titleLabel.text = title
-        screen.productDetailImageView.image = UIImage(named: image )
-        }
+//    public func setupCellPackDetail( image: String){
+//        //screen.titleLabel.text = title
+//        screen.productDetailImageView.image = UIImage(named: image )
+//        }
     
 //    public func setupCell(id: Int, title: String, description: String){
 //        screen.idLabel.text = "\(id)"
